@@ -1,3 +1,9 @@
+/*
+* To compile, type: "g++ -o calc.exe calculator.cpp" in git bash
+* To run, type "./calc.exe" in git bash
+*/
+
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,6 +27,7 @@ int main() {
         cout << "Enter second number: ";
         cin >> num2;
 
+        // what happens when we divide by 0? How do we handle that?
         if(op == '+'){
             result = num1 + num2;
         } else if(op == '-'){
