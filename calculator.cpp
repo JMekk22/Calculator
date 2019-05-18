@@ -26,27 +26,34 @@ int main() {
         cin >> op;
         cout << "Enter second number: ";
         cin >> num2;
-
+    }
         // what happens when we divide by 0? How do we handle that?
-        if(op == '+'){
-            result = num1 + num2;
-        } else if(op == '-'){
-            result = num1 - num2;
-        }else if(op == '/'){
-            result = num1 / num2;
-        }else if(op == '*'){
-            result = num1 * num2;
-        } else {
+        switch(pemdas){
+            case 0:
+                op == '+'
+                result = "num1 + num2";
+                break;
+            case 1:
+                op == '-'
+                result = "num1 - num2";
+                break;
+            case 2:
+                op == '/'
+                result = "num1 / num2";
+                break;
+            case 3:
+                op == '*'
+                result = "num1 * num2";
+                break;
+        }       
             cout << "Invalid Operator";
-        }
-        cout << num1 << " " << op << " " << num1 << " equals " << result;
+        
+        {cout << num1 << " " << op << " " << num1 << " equals " << result;
 
        
         cout << "\nWould you like to keep using calculator? Type \"yes\" or \"no\": ";
         cin >> keepRunning;
  
 
-    } while (keepRunning == "yes");
-   
-
-}
+     while (keepRunning == "yes");
+   }
